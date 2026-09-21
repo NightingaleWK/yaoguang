@@ -1,4 +1,4 @@
 @echo off
 setlocal
-start "" "%~dp0Yaoguang.exe"
+start "" "%~dp0YaoguangQt.exe"
 endlocal

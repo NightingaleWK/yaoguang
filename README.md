@@ -1,8 +1,8 @@
 # Yaoguang 下班模式
 
-推荐直接运行目录中的 `Yaoguang.exe`。它是原生 Windows GUI，不需要打开 PowerShell 窗口。
+推荐直接运行目录中的 `YaoguangQt.exe`。它使用 Qt 6.11.2 Widgets，不需要打开 PowerShell 窗口。
 
-双击 `Yaoguang.exe`、`Yaoguang-GUI.cmd`（或 `下班关灯.cmd`）打开图形界面：
+双击 `YaoguangQt.exe`、`Yaoguang-GUI.cmd`（或 `下班关灯.cmd`）打开图形界面：
 
 - 关闭两个显示器的显示信号；主机继续运行，后台任务继续运行。
 - 点击“进入下班模式”时不会立即锁屏，Windows 会保持当前解锁状态。

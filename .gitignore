@@ -1,2 +1,5 @@
 settings.json
 yaoguang.log
+build/
+dist/
+*.spec
