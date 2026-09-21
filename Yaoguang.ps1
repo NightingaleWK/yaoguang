@@ -1,5 +1,7 @@
-param()
+﻿param()
 $ErrorActionPreference = 'Stop'
+$logPath = Join-Path (Split-Path -Parent $MyInvocation.MyCommand.Path) 'yaoguang.log'
+try { Start-Transcript -Path $logPath -Append -Force | Out-Null } catch { }
 Add-Type @'
 using System;
 using System.Runtime.InteropServices;
@@ -36,6 +38,5 @@ $timer=New-Object Windows.Forms.Timer;$timer.Interval=250;$timer.Add_Tick({if($s
 $saveButton.Add_Click({Save-Settings;[Windows.Forms.MessageBox]::Show('设置已保存。','Yaoguang')})
 $mainButton.Add_Click({if($state-eq'Ready'){Save-Settings;$baselineInput=[YaoguangNative]::LastInputTick();Set-Monitors 2;$state='Waiting';$timer.Start();Refresh-Ui}else{Set-Monitors -1;$timer.Stop();$state='Ready';Refresh-Ui}})
 $restoreButton.Add_Click({Set-Monitors -1;$timer.Stop();$state='Ready';Refresh-Ui})
-$form.Add_FormClosing({if($state-ne'Ready'-and-not$locked){Set-Monitors -1};$timer.Stop()})
+$form.Add_FormClosing({if($state-ne'Ready'-and-not$locked){Set-Monitors -1};$timer.Stop();try{Stop-Transcript|Out-Null}catch{}})
 Refresh-Ui;[void]$form.ShowDialog()
-
