@@ -1,5 +1,13 @@
 import ctypes, json, logging, os, sys, time
 from ctypes import wintypes
+# PyInstaller stores Qt's native DLLs below _MEIPASS/PySide6. Add that
+# directory before importing any PySide6 module so Windows can resolve QtCore.
+if getattr(sys, 'frozen', False):
+    _qt_dir = os.path.join(getattr(sys, '_MEIPASS', os.path.dirname(sys.executable)), 'PySide6')
+    if os.path.isdir(_qt_dir):
+        os.environ['PATH'] = _qt_dir + os.pathsep + os.environ.get('PATH', '')
+        if hasattr(os, 'add_dll_directory'):
+            os.add_dll_directory(_qt_dir)
 from PySide6.QtCore import QTimer, Qt
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QApplication, QWidget, QLabel, QCheckBox, QSpinBox, QPushButton, QVBoxLayout, QHBoxLayout, QMessageBox
