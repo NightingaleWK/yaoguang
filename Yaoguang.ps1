@@ -17,37 +17,6 @@ public static class YaoguangDisplay {
 }
 '@
 
-function Find-OpenRgb {
-    $candidates = @(
-        (Get-Command openrgb.exe -ErrorAction SilentlyContinue).Source,
-        "$env:ProgramFiles\OpenRGB\OpenRGB.exe",
-        "${env:ProgramFiles(x86)}\OpenRGB\OpenRGB.exe",
-        "$env:LOCALAPPDATA\Programs\OpenRGB\OpenRGB.exe"
-    ) | Where-Object { $_ -and (Test-Path -LiteralPath $_) }
-    return $candidates | Select-Object -First 1
-}
-
-function Set-Rgb([ValidateSet('off','on')][string]$State) {
-    $openRgb = Find-OpenRgb
-    if (-not $openRgb) {
-        Write-Host '[RGB] OpenRGB not found; skipped device lighting.' -ForegroundColor Yellow
-        return
-    }
-
-    # Device names vary by firmware. Add the exact names shown by OpenRGB here if needed.
-    $devices = @('J104', 'Logitech G102', 'G102', 'G203')
-    $mode = if ($State -eq 'off') { 'off' } else { 'static' }
-    $changed = $false
-    foreach ($device in $devices) {
-        try {
-            $p = Start-Process -FilePath $openRgb -ArgumentList @('--device', $device, '--mode', $mode) -WindowStyle Hidden -Wait -PassThru
-            if ($p.ExitCode -eq 0) { $changed = $true }
-        } catch { }
-    }
-    if ($changed) { Write-Host "[RGB] Requested OpenRGB state: $State." -ForegroundColor Green }
-    else { Write-Host '[RGB] No matching device; check names in OpenRGB or use hardware hotkeys.' -ForegroundColor Yellow }
-}
-
 function Set-Monitors([ValidateSet('off','on')][string]$State) {
     $level = if ($State -eq 'off') { 2 } else { -1 }
     [void][YaoguangDisplay]::SendMessage(
@@ -60,10 +29,7 @@ function Set-Monitors([ValidateSet('off','on')][string]$State) {
 }
 
 if ($Action -eq 'off') {
-    Set-Rgb off
-    Start-Sleep -Milliseconds 250
     Set-Monitors off
 } else {
     Set-Monitors on
-    Set-Rgb on
 }
