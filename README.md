@@ -1,8 +1,8 @@
 # Yaoguang 下班模式
 
-运行要求：Windows PowerShell 7（`pwsh.exe`），启动器会以 STA 模式运行 WinForms 界面。如果电脑未安装，启动器会提示下载地址。
+推荐直接运行目录中的 `Yaoguang.exe`。它是原生 Windows GUI，不需要打开 PowerShell 窗口。
 
-双击 `Yaoguang-GUI.cmd`（或 `下班关灯.cmd`）打开图形界面：
+双击 `Yaoguang.exe`、`Yaoguang-GUI.cmd`（或 `下班关灯.cmd`）打开图形界面：
 
 - 关闭两个显示器的显示信号；主机继续运行，后台任务继续运行。
 - 点击“进入下班模式”时不会立即锁屏，Windows 会保持当前解锁状态。
@@ -20,7 +20,7 @@
 
 ## 验证
 
-运行：
+源码调试运行（可选）：
 
 ```powershell
 pwsh -NoProfile -ExecutionPolicy Bypass -File .\Yaoguang.ps1

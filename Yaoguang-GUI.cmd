@@ -1,9 +1,2 @@
 @echo off
-where pwsh.exe >nul 2>nul
-if errorlevel 1 (
-  echo PowerShell 7 (pwsh.exe) is required.
-  echo Download: https://github.com/PowerShell/PowerShell
-  pause
-  exit /b 1
-)
-pwsh.exe -STA -NoLogo -NoProfile -ExecutionPolicy Bypass -File "%~dp0Yaoguang.ps1"
+start "" "%~dp0Yaoguang.exe"
