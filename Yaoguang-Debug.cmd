@@ -8,7 +8,7 @@ if errorlevel 1 (
   pause
   exit /b 1
 )
-pwsh.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File "%~dp0Yaoguang.ps1"
+pwsh.exe -STA -NoLogo -NoProfile -ExecutionPolicy Bypass -File "%~dp0Yaoguang.ps1"
 if errorlevel 1 (
   echo.
   echo Yaoguang failed. See yaoguang.log for details.

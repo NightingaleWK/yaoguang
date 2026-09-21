@@ -1,6 +1,6 @@
 # Yaoguang 下班模式
 
-运行要求：Windows PowerShell 7（`pwsh.exe`）。如果电脑未安装，启动器会提示下载地址。
+运行要求：Windows PowerShell 7（`pwsh.exe`），启动器会以 STA 模式运行 WinForms 界面。如果电脑未安装，启动器会提示下载地址。
 
 双击 `Yaoguang-GUI.cmd`（或 `下班关灯.cmd`）打开图形界面：
 
