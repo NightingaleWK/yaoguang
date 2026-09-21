@@ -1,5 +1,7 @@
 # Yaoguang 下班模式
 
+运行要求：Windows PowerShell 7（`pwsh.exe`）。如果电脑未安装，启动器会提示下载地址。
+
 双击 `Yaoguang-GUI.cmd`（或 `下班关灯.cmd`）打开图形界面：
 
 - 关闭两个显示器的显示信号；主机继续运行，后台任务继续运行。
@@ -21,7 +23,7 @@
 运行：
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\Yaoguang.ps1
+pwsh -NoProfile -ExecutionPolicy Bypass -File .\Yaoguang.ps1
 ```
 
 脚本不会关机、睡眠、休眠或控制键鼠灯效；自动锁屏开启时会调用 Windows 的 `LockWorkStation`。
