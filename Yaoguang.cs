@@ -20,7 +20,7 @@ internal sealed class MainForm : Form {
     Settings config; string state = "Ready"; uint baseline, wake; bool locked;
     MainForm() {
         logPath = Path.Combine(dir, "yaoguang.log"); settingsPath = Path.Combine(dir, "settings.json"); Log("启动 Yaoguang EXE"); config = Load();
-        Text = "Yaoguang 下班模式"; ClientSize = new Size(430, 330); StartPosition = FormStartPosition.CenterScreen; FormBorderStyle = FormBorderStyle.FixedDialog; MaximizeBox = false;
+        Text = "Yaoguang 下班模式"; ClientSize = new Size(430, 330); StartPosition = FormStartPosition.CenterScreen; FormBorderStyle = FormBorderStyle.FixedDialog; MaximizeBox = false; AutoScaleMode = AutoScaleMode.Dpi; AutoScaleDimensions = new SizeF(96F, 96F); Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
         Controls.Add(Label("Yaoguang 下班模式", 24, 18, 16, true)); status = Label("当前状态：正常运行", 26, 62, 11, true); Controls.Add(status);
         auto = new CheckBox { Text = "启用无操作自动锁屏", Checked = config.AutoLockEnabled, Location = new Point(28, 105), AutoSize = true }; Controls.Add(auto);
         Controls.Add(Label("无操作时间（秒）：", 28, 140, 10, false)); seconds = new NumericUpDown { Minimum = 10, Maximum = 86400, Value = Math.Max(10, Math.Min(86400, config.IdleSeconds)), Location = new Point(160, 136), Width = 90 }; Controls.Add(seconds);
