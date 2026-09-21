@@ -7,5 +7,5 @@ if errorlevel 1 (
   pause
   exit /b 1
 )
-start "Yaoguang" pwsh.exe -STA -NoLogo -NoProfile -ExecutionPolicy Bypass -File "%~dp0Yaoguang.ps1"
+pwsh.exe -STA -NoLogo -NoProfile -ExecutionPolicy Bypass -File "%~dp0Yaoguang.ps1"
 endlocal

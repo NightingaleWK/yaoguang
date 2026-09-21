@@ -39,4 +39,6 @@ $saveButton.Add_Click({Save-Settings;[Windows.Forms.MessageBox]::Show('设置已
 $mainButton.Add_Click({if($state-eq'Ready'){Save-Settings;$baselineInput=[YaoguangNative]::LastInputTick();Set-Monitors 2;$state='Waiting';$timer.Start();Refresh-Ui}else{Set-Monitors -1;$timer.Stop();$state='Ready';Refresh-Ui}})
 $restoreButton.Add_Click({Set-Monitors -1;$timer.Stop();$state='Ready';Refresh-Ui})
 $form.Add_FormClosing({if($state-ne'Ready'-and-not$locked){Set-Monitors -1};$timer.Stop();try{Stop-Transcript|Out-Null}catch{}})
-Refresh-Ui;[void]$form.ShowDialog()
+Refresh-Ui
+$form.Add_Shown({ $form.Activate() })
+[void]$form.ShowDialog()
