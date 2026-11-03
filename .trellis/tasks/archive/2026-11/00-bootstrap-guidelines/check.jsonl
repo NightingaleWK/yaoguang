@@ -1,0 +1,12 @@
+{"file": ".trellis/spec/index.md", "reason": "项目范围、当前能力与验收证据边界"}
+{"file": ".trellis/spec/desktop/index.md", "reason": "桌面规范导航与开发/质量检查入口"}
+{"file": ".trellis/spec/desktop/directory-structure.md", "reason": "四个正式模块的职责与导入顺序"}
+{"file": ".trellis/spec/desktop/ui-and-state.md", "reason": "状态机与自动再次熄屏合同"}
+{"file": ".trellis/spec/desktop/settings-and-data.md", "reason": "本地设置兼容与保存合同"}
+{"file": ".trellis/spec/desktop/windows-integration.md", "reason": "显示、输入钩子、设备与互斥范围"}
+{"file": ".trellis/spec/desktop/recovery-and-errors.md", "reason": "副作用前独立恢复与错误通道"}
+{"file": ".trellis/spec/desktop/logging-guidelines.md", "reason": "现有日志能力及限制"}
+{"file": ".trellis/spec/desktop/quality-guidelines.md", "reason": "检查层级和历史证据边界"}
+{"file": ".trellis/spec/desktop/delivery-and-cleanup.md", "reason": "EXE 核验与本地数据保留"}
+{"file": ".trellis/spec/guides/index.md", "reason": "本工具的跨模块与复用指南入口"}
+{"file": ".trellis/tasks/00-bootstrap-guidelines/research/codebase.md", "reason": "本任务代码依据与历史材料误读说明"}

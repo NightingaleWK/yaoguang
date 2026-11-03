@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-03",
+  "task": "00-bootstrap-guidelines",
+  "source_baseline": "2becb1544e3a3f13d5dd50d5462bf36ab5dfe294",
+  "spec_markdown_files": 13,
+  "markdown_files_checked": 19,
+  "local_markdown_links_checked": 36,
+  "desktop_spec_index_complete": true,
+  "template_residue": [],
+  "source_symbols_checked": 31,
+  "syntax_compiled_files": [
+    "yaoguang_devices.py",
+    "yaoguang_native.py",
+    "yaoguang_qt.py",
+    "yaoguang_watchdog.py",
+    "scripts/build_windows.py",
+    "scripts/verify_package.py"
+  ],
+  "tracked_product_changes": [],
+  "current_package_matches_accepted_baseline": true,
+  "verification_environment": {
+    "python": "3.12.14 Windows",
+    "PyInstaller": "6.22.3",
+    "PySide6": "6.11.2"
+  },
+  "hardware_tests_rerun": false,
+  "historical_regressions_rerun": false,
+  "errors": [],
+  "passed": true,
+  "closeout": {
+    "task_status": "completed",
+    "completed_at": "2026-11-03",
+    "archived_task": ".trellis/tasks/archive/2026-11/00-bootstrap-guidelines",
+    "active_task_count": 0,
+    "journal_recorded": true,
+    "git_commits_created": false,
+    "git_push_performed": false
+  }
+}

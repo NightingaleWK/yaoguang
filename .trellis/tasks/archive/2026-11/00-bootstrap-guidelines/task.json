@@ -1,0 +1,36 @@
+{
+  "id": "00-bootstrap-guidelines",
+  "name": "00-bootstrap-guidelines",
+  "title": "Yaoguang 现状回填与开发规范初始化",
+  "description": "基于当前 Windows Qt 工具与验收证据完善 Trellis 规范并关闭初始化任务",
+  "status": "completed",
+  "dev_type": "docs",
+  "scope": "docs",
+  "package": null,
+  "priority": "P1",
+  "creator": "NightingaleWK",
+  "assignee": "NightingaleWK",
+  "createdAt": "2026-11-03",
+  "completedAt": "2026-11-03",
+  "branch": "main",
+  "base_branch": null,
+  "worktree_path": null,
+  "commit": null,
+  "pr_url": null,
+  "subtasks": [],
+  "children": [],
+  "parent": null,
+  "relatedFiles": [
+    ".trellis/spec/",
+    ".trellis/tasks/archive/2026-11/00-bootstrap-guidelines/",
+    ".trellis/workspace/NightingaleWK/",
+    "AGENTS.md",
+    ".gitattributes"
+  ],
+  "notes": "trellis init 创建的默认任务；本轮按用户要求回填实际工具现状并完成归档。文档任务无独立 PR 分支；不提交或推送 Git，不修改产品与用户数据。",
+  "meta": {
+    "source_baseline": "2becb1544e3a3f13d5dd50d5462bf36ab5dfe294",
+    "verification_scope": "source-backed specs, static checks and read-only package verification; no hardware retest",
+    "completion_record": ".trellis/tasks/archive/2026-11/00-bootstrap-guidelines/handoff.md"
+  }
+}

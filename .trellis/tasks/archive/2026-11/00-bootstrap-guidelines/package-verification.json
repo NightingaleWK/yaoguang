@@ -1,0 +1,19 @@
+{
+  "exe_sha256": "24f4a0ef1a758331e7275f1976ee91340cc9e6a93f9dce9a0f71b242530531d5",
+  "desktop_sha256": "24f4a0ef1a758331e7275f1976ee91340cc9e6a93f9dce9a0f71b242530531d5",
+  "bytes": 45298201,
+  "embedded_code_matches_final_source": {
+    "yaoguang_qt": true,
+    "yaoguang_native": true,
+    "yaoguang_devices": true,
+    "yaoguang_watchdog": true
+  },
+  "administrator_manifest": true,
+  "source_sha256": {
+    "yaoguang_qt.py": "cee57ae01a4c8e67685587d35bca7649ababb0f331be3609c681b3a44ad0c2ff",
+    "yaoguang_native.py": "c6e4ceb3f227794a3245925d2e6e04be8fca2036416b2fc6240d6dff38acaea2",
+    "yaoguang_devices.py": "5ffa2aa927b49f258d540d9ac11c4ba632366fdadebea3d24b7d8c8ca2343777",
+    "yaoguang_watchdog.py": "6f7235daf23f021576f19ce6fc1d27d61b176fbb60f5af0716c3e0c50e4dcc65"
+  },
+  "bundled_test_modules": []
+}
