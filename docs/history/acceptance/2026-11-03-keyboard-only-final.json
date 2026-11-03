@@ -1,0 +1,43 @@
+{
+  "checks": {
+    "all_active_mouse_devices_paused": true,
+    "display_signal_stayed_off_until_keyboard": true,
+    "keyboard_wake_restores_display_and_mice": true,
+    "independent_recovery_after_parent_crash": true,
+    "single_instance_mutex": true,
+    "delivered_gui_launch_and_exit": true
+  },
+  "phase": "complete",
+  "passed": true,
+  "executable": "C:\\Users\\djsyw\\Desktop\\YaoguangQt.exe",
+  "display_events": [
+    {
+      "time": 3949.218,
+      "state": 1
+    },
+    {
+      "time": 3954.296,
+      "state": 0
+    },
+    {
+      "time": 3969.671,
+      "state": 1
+    },
+    {
+      "time": 3974.546,
+      "state": 0
+    },
+    {
+      "time": 3976.906,
+      "state": 1
+    }
+  ],
+  "paused_mouse_count": 4,
+  "observation_seconds": 15.02,
+  "gui": {
+    "title": "Yaoguang 下班模式",
+    "width": 555,
+    "height": 447
+  },
+  "physical_mouse_observation": "User confirmation is recorded separately."
+}

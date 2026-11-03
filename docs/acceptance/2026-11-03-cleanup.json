@@ -1,0 +1,17 @@
+{
+  "regression_cases": 16,
+  "regressions_passed": true,
+  "production_modules": [
+    "yaoguang_qt.py",
+    "yaoguang_native.py",
+    "yaoguang_devices.py",
+    "yaoguang_watchdog.py"
+  ],
+  "runtime_test_entrypoints": [],
+  "bundled_test_modules": [],
+  "legacy_implementations_removed": true,
+  "old_build_directories_removed": true,
+  "local_settings_and_logs_preserved": true,
+  "desktop_idle_seconds": 10,
+  "exe_sha256": "24f4a0ef1a758331e7275f1976ee91340cc9e6a93f9dce9a0f71b242530531d5"
+}

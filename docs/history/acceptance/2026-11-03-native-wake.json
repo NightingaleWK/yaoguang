@@ -1,0 +1,19 @@
+{
+  "checks": {},
+  "display_events": [
+    {
+      "time": 2929.953,
+      "state": 1
+    },
+    {
+      "time": 2930.593,
+      "state": 0
+    },
+    {
+      "time": 2931.671,
+      "state": 1
+    }
+  ],
+  "passed": false,
+  "error": "AssertionError('No readable monitor confirmed hardware standby')"
+}

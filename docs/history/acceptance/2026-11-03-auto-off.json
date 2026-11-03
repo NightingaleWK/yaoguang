@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "phase": "complete",
+  "checks": {
+    "manual_off_uses_mouse_protection": true,
+    "keyboard_wake_starts_real_ten_second_timer": true,
+    "idle_expiry_turns_real_display_signal_off": true,
+    "idle_off_rearms_keyboard_only_wake": true,
+    "keyboard_wakes_again_and_restores_mice": true,
+    "interface_uses_auto_off_wording": true,
+    "explicit_exit_cancels_repeating_mode": true
+  },
+  "executable": "C:\\Users\\djsyw\\Desktop\\YaoguangQt.exe",
+  "display_events": [
+    {
+      "time": 4893.281,
+      "state": 1
+    },
+    {
+      "time": 4896.437,
+      "state": 0
+    },
+    {
+      "time": 4897.843,
+      "state": 1
+    },
+    {
+      "time": 4910.609,
+      "state": 0
+    },
+    {
+      "time": 4912.062,
+      "state": 1
+    }
+  ],
+  "paused_mouse_count": 4,
+  "auto_off_after_seconds": 12.83,
+  "screenshot": "C:\\Users\\djsyw\\code\\yaoguang\\docs\\acceptance\\2026-11-03-auto-off.png"
+}

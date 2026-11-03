@@ -1,5 +1,10 @@
 settings.json
-yaoguang.log
+yaoguang.lock
+*.log
+*.tmp
+__pycache__/
+*.py[cod]
+.venv/
 build/
 dist/
 *.spec

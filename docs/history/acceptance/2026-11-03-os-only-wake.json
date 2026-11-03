@@ -1,0 +1,19 @@
+{
+  "checks": {},
+  "display_events": [
+    {
+      "time": 2442.859,
+      "state": 1
+    },
+    {
+      "time": 2443.078,
+      "state": 0
+    },
+    {
+      "time": 2444.062,
+      "state": 1
+    }
+  ],
+  "passed": false,
+  "error": "AssertionError('Mouse motion powered on the displays')"
+}
